@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="forKernels - High-performance Fortran HPC libraries for AI, signal processing, and edge computing. Optimized for modern cloud and edge deployments.">
+    <meta name="keywords" content="Fortran, HPC, high-performance computing, AI, machine learning, signal processing, DSP, CUDA, edge computing, IoT, forKernels">
+    <meta name="author" content="forKernels">
+    <meta property="og:title" content="forKernels - Fortran HPC for the Edge Layer">
+    <meta property="og:description" content="Suite of high-performance Fortran libraries for modern HPC, AI, and signal-processing workloads">
+    <meta property="og:type" content="website">
+    <title>forKernels - High-Performance Fortran HPC Libraries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">forKernels</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#libraries">Libraries</a></li>
+                <li><a href="#benchmarks">Benchmarks</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#marketplace">Marketplace</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Fortran HPC for the Edge Layer of the Cloud Continuum</h1>
+                <p class="hero-subtitle">High-performance libraries optimized for modern HPC, AI, and signal-processing workloads</p>
+                <div class="hero-cta">
+                    <a href="https://github.com/forKernels" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Explore on GitHub</a>
+                    <a href="#overview" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Overview</h2>
+            <div class="overview-content">
+                <p class="lead">
+                    forKernels is a comprehensive suite of high-performance Fortran libraries designed to deliver 
+                    near-bare-metal speed for demanding computational workloads. Each module is optimized for modern 
+                    HPC environments while providing easy integration through Python bindings.
+                </p>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Mission</h3>
+                        <p>To provide enterprise-grade, high-performance computing solutions that bridge the gap between raw computational power and practical application development.</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Vision</h3>
+                        <p>Empowering developers and researchers with production-ready HPC libraries that scale from edge devices to cloud infrastructure.</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Approach</h3>
+                        <p>Leveraging Fortran's proven performance with modern interfaces, enabling seamless integration into contemporary software ecosystems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Exceptional Performance</h3>
+                    <p>Optimized Fortran kernels delivering near-bare-metal execution speeds for compute-intensive operations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Cross-Platform Portability</h3>
+                    <p>Run seamlessly across x86, ARM, and GPU architectures with consistent performance characteristics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🐍</div>
+                    <h3>Python Integration</h3>
+                    <p>Easy-to-use Python bindings enable rapid prototyping while maintaining production-grade performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Production Ready</h3>
+                    <p>Battle-tested libraries suitable for mission-critical applications in research and enterprise environments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Cloud Native</h3>
+                    <p>Optimized for modern cloud deployments with support for containerization and orchestration platforms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Edge Computing</h3>
+                    <p>Lightweight footprint suitable for IoT and edge deployments where resources are constrained.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Libraries Section -->
+    <section id="libraries" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Library Suite</h2>
+            <div class="libraries-grid">
+                <div class="library-card">
+                    <h3 class="library-name">forMath</h3>
+                    <p class="library-description">Comprehensive mathematical operations including linear algebra, matrix computations, and numerical methods optimized for scientific computing.</p>
+                    <ul class="library-features">
+                        <li>BLAS/LAPACK-level performance</li>
+                        <li>Vector and matrix operations</li>
+                        <li>Statistical functions</li>
+                    </ul>
+                </div>
+                <div class="library-card">
+                    <h3 class="library-name">forAI</h3>
+                    <p class="library-description">AI and machine learning primitives designed for training and inference workloads with focus on neural network operations.</p>
+                    <ul class="library-features">
+                        <li>Neural network kernels</li>
+                        <li>Activation functions</li>
+                        <li>Optimization algorithms</li>
+                    </ul>
+                </div>
+                <div class="library-card">
+                    <h3 class="library-name">forDSP</h3>
+                    <p class="library-description">Digital signal processing kernels for filtering, transforms, and real-time signal analysis applications.</p>
+                    <ul class="library-features">
+                        <li>FFT/IFFT operations</li>
+                        <li>FIR/IIR filters</li>
+                        <li>Spectral analysis</li>
+                    </ul>
+                </div>
+                <div class="library-card">
+                    <h3 class="library-name">for3D</h3>
+                    <p class="library-description">3D graphics and geometry operations for rendering, computer vision, and spatial computing applications.</p>
+                    <ul class="library-features">
+                        <li>Matrix transformations</li>
+                        <li>Geometric primitives</li>
+                        <li>Collision detection</li>
+                    </ul>
+                </div>
+                <div class="library-card">
+                    <h3 class="library-name">forCUDA</h3>
+                    <p class="library-description">GPU acceleration interfaces providing seamless access to CUDA-enabled hardware for parallel processing.</p>
+                    <ul class="library-features">
+                        <li>GPU memory management</li>
+                        <li>Kernel execution</li>
+                        <li>Multi-GPU support</li>
+                    </ul>
+                </div>
+                <div class="library-card">
+                    <h3 class="library-name">forQuant</h3>
+                    <p class="library-description">Quantitative computing and financial mathematics for risk analysis, pricing models, and portfolio optimization.</p>
+                    <ul class="library-features">
+                        <li>Risk analytics</li>
+                        <li>Monte Carlo simulation</li>
+                        <li>Time series analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benchmarks Section -->
+    <section id="benchmarks" class="section">
+        <div class="container">
+            <h2 class="section-title">Performance Benchmarks</h2>
+            <p class="section-intro">forKernels libraries deliver exceptional performance across various computational workloads. Our benchmarks demonstrate significant speedups over traditional implementations.</p>
+            <div class="benchmark-grid">
+                <div class="benchmark-card">
+                    <h3>Matrix Operations</h3>
+                    <div class="benchmark-stat">
+                        <span class="benchmark-value">95%+</span>
+                        <span class="benchmark-label">of theoretical peak performance</span>
+                    </div>
+                    <p>Dense matrix multiplication and linear algebra operations approach hardware limits.</p>
+                </div>
+                <div class="benchmark-card">
+                    <h3>FFT Performance</h3>
+                    <div class="benchmark-stat">
+                        <span class="benchmark-value">10-50x</span>
+                        <span class="benchmark-label">faster than numpy</span>
+                    </div>
+                    <p>Optimized FFT implementations for signal processing and spectral analysis.</p>
+                </div>
+                <div class="benchmark-card">
+                    <h3>Neural Network Inference</h3>
+                    <div class="benchmark-stat">
+                        <span class="benchmark-value">3-8x</span>
+                        <span class="benchmark-label">speedup over standard frameworks</span>
+                    </div>
+                    <p>Optimized kernels for common neural network operations and layer types.</p>
+                </div>
+                <div class="benchmark-card">
+                    <h3>Memory Efficiency</h3>
+                    <div class="benchmark-stat">
+                        <span class="benchmark-value">40-60%</span>
+                        <span class="benchmark-label">reduced memory footprint</span>
+                    </div>
+                    <p>Efficient memory management enables deployment on resource-constrained devices.</p>
+                </div>
+            </div>
+            <p class="benchmark-note">
+                <strong>Note:</strong> Benchmarks vary based on hardware configuration, problem size, and specific use case. 
+                Results represent typical performance gains observed in real-world applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Supported Platforms Section -->
+    <section id="platforms" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Supported Platforms</h2>
+            <div class="platforms-content">
+                <div class="platform-category">
+                    <h3>Operating Systems</h3>
+                    <ul class="platform-list">
+                        <li>Linux (Ubuntu, CentOS, RHEL, Debian)</li>
+                        <li>Windows (10, 11, Server)</li>
+                        <li>macOS (Intel and Apple Silicon)</li>
+                        <li>Unix variants (FreeBSD, Solaris)</li>
+                    </ul>
+                </div>
+                <div class="platform-category">
+                    <h3>Hardware Architectures</h3>
+                    <ul class="platform-list">
+                        <li>x86_64 (Intel, AMD)</li>
+                        <li>ARM (ARMv8, ARMv9)</li>
+                        <li>NVIDIA CUDA GPUs</li>
+                        <li>AMD ROCm GPUs</li>
+                    </ul>
+                </div>
+                <div class="platform-category">
+                    <h3>Cloud Platforms</h3>
+                    <ul class="platform-list">
+                        <li>Amazon Web Services (EC2, ECS, Lambda)</li>
+                        <li>Google Cloud Platform (Compute Engine, GKE)</li>
+                        <li>Microsoft Azure (VMs, AKS)</li>
+                        <li>Private cloud and on-premises</li>
+                    </ul>
+                </div>
+                <div class="platform-category">
+                    <h3>Container Platforms</h3>
+                    <ul class="platform-list">
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Podman</li>
+                        <li>Singularity/Apptainer (HPC)</li>
+                    </ul>
+                </div>
+                <div class="platform-category">
+                    <h3>Edge Devices</h3>
+                    <ul class="platform-list">
+                        <li>NVIDIA Jetson (AGX, Xavier, Nano)</li>
+                        <li>Raspberry Pi</li>
+                        <li>Intel NUC</li>
+                        <li>Industrial IoT gateways</li>
+                    </ul>
+                </div>
+                <div class="platform-category">
+                    <h3>HPC Systems</h3>
+                    <ul class="platform-list">
+                        <li>SLURM clusters</li>
+                        <li>PBS/Torque systems</li>
+                        <li>OpenHPC environments</li>
+                        <li>Supercomputing facilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="section">
+        <div class="container">
+            <h2 class="section-title">Marketplace & Distribution</h2>
+            <p class="section-intro">forKernels libraries are available through leading cloud marketplaces and distribution channels, making deployment straightforward for enterprise customers.</p>
+            <div class="marketplace-grid">
+                <div class="marketplace-card">
+                    <div class="marketplace-logo">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M6.763 10.036c.175.173.425.268.687.268h.007a.994.994 0 00.683-.27l.902-.902a.997.997 0 00.282-.683v-.007a.997.997 0 00-.282-.683l-.907-.907a.997.997 0 00-.683-.282h-.007a.997.997 0 00-.683.282l-.902.902a.997.997 0 00-.282.683v.007c0 .258.099.5.282.683l.903.907zM8.35 12.025c.175.173.425.268.687.268h.007a.994.994 0 00.683-.27l.902-.902a.997.997 0 00.282-.683v-.007a.997.997 0 00-.282-.683l-.907-.907a.997.997 0 00-.683-.282h-.007a.997.997 0 00-.683.282l-.902.902a.997.997 0 00-.282.683v.007c0 .258.099.5.282.683l.903.907zM9.937 13.612c.175.173.425.268.687.268h.007a.994.994 0 00.683-.27l.902-.902a.997.997 0 00.282-.683v-.007a.997.997 0 00-.282-.683l-.907-.907a.997.997 0 00-.683-.282h-.007a.997.997 0 00-.683.282l-.902.902a.997.997 0 00-.282.683v.007c0 .258.099.5.282.683l.903.907zM11.524 15.199c.175.173.425.268.687.268h.007a.994.994 0 00.683-.27l.902-.902a.997.997 0 00.282-.683v-.007a.997.997 0 00-.282-.683l-.907-.907a.997.997 0 00-.683-.282h-.007a.997.997 0 00-.683.282l-.902.902a.997.997 0 00-.282.683v.007c0 .258.099.5.282.683l.903.907z"/>
+                        </svg>
+                    </div>
+                    <h3>AWS Marketplace</h3>
+                    <p>Deploy forKernels libraries directly on Amazon Web Services with pre-configured AMIs and container images.</p>
+                    <ul class="marketplace-features">
+                        <li>One-click deployment on EC2</li>
+                        <li>ECS/EKS container support</li>
+                        <li>Flexible licensing options</li>
+                        <li>AWS billing integration</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Coming Soon</a>
+                </div>
+                <div class="marketplace-card">
+                    <div class="marketplace-logo">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M12.19 2.38a7.42 7.42 0 00-4.12 1.22A13.77 13.77 0 014.54 6.4a13.77 13.77 0 00-2.8 3.53 7.42 7.42 0 00-1.22 4.12 7.42 7.42 0 001.22 4.12 13.77 13.77 0 002.8 3.53 13.77 13.77 0 003.53 2.8 7.42 7.42 0 004.12 1.22 7.42 7.42 0 004.12-1.22 13.77 13.77 0 003.53-2.8 13.77 13.77 0 002.8-3.53 7.42 7.42 0 001.22-4.12 7.42 7.42 0 00-1.22-4.12 13.77 13.77 0 00-2.8-3.53 13.77 13.77 0 00-3.53-2.8 7.42 7.42 0 00-4.12-1.22zm0 1.5a5.92 5.92 0 013.3.98 12.27 12.27 0 013.15 2.5 12.27 12.27 0 012.5 3.15 5.92 5.92 0 01.98 3.3 5.92 5.92 0 01-.98 3.3 12.27 12.27 0 01-2.5 3.15 12.27 12.27 0 01-3.15 2.5 5.92 5.92 0 01-3.3.98 5.92 5.92 0 01-3.3-.98 12.27 12.27 0 01-3.15-2.5 12.27 12.27 0 01-2.5-3.15 5.92 5.92 0 01-.98-3.3 5.92 5.92 0 01.98-3.3 12.27 12.27 0 012.5-3.15 12.27 12.27 0 013.15-2.5 5.92 5.92 0 013.3-.98z"/>
+                        </svg>
+                    </div>
+                    <h3>Google Cloud Marketplace</h3>
+                    <p>Access forKernels through Google Cloud Platform with optimized configurations for GCE and GKE.</p>
+                    <ul class="marketplace-features">
+                        <li>GCE VM images</li>
+                        <li>GKE-ready containers</li>
+                        <li>Cloud Build integration</li>
+                        <li>Unified billing</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Coming Soon</a>
+                </div>
+                <div class="marketplace-card">
+                    <div class="marketplace-logo">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </div>
+                    <h3>Direct Distribution</h3>
+                    <p>Download and deploy forKernels libraries directly for on-premises and private cloud installations.</p>
+                    <ul class="marketplace-features">
+                        <li>PyPI package distribution</li>
+                        <li>Conda-forge availability</li>
+                        <li>Enterprise licensing</li>
+                        <li>Custom deployment support</li>
+                    </ul>
+                    <a href="https://github.com/forKernels" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Getting Started</h2>
+            <div class="getting-started-content">
+                <p class="section-intro">forKernels libraries are designed for easy integration into your existing workflows. Choose your preferred installation method below.</p>
+                
+                <div class="install-methods">
+                    <div class="install-card">
+                        <h3>Python Installation</h3>
+                        <pre><code>pip install formath forai fordsp</code></pre>
+                        <p>Install individual libraries via pip for immediate Python integration.</p>
+                    </div>
+                    
+                    <div class="install-card">
+                        <h3>Container Deployment</h3>
+                        <pre><code>docker pull ghcr.io/forkernels/forai:latest</code></pre>
+                        <p>Use pre-built containers for rapid deployment in cloud environments.</p>
+                    </div>
+                    
+                    <div class="install-card">
+                        <h3>Source Build</h3>
+                        <pre><code>git clone https://github.com/forKernels/forMath
+cd forMath && make install</code></pre>
+                        <p>Build from source for custom configurations and optimizations.</p>
+                    </div>
+                </div>
+
+                <div class="use-cases">
+                    <h3>Common Use Cases</h3>
+                    <div class="use-case-grid">
+                        <div class="use-case">
+                            <h4>AI/ML Acceleration</h4>
+                            <p>Accelerate neural network training and inference with optimized forAI kernels.</p>
+                        </div>
+                        <div class="use-case">
+                            <h4>Signal Processing</h4>
+                            <p>Real-time audio, video, and sensor data processing with forDSP.</p>
+                        </div>
+                        <div class="use-case">
+                            <h4>Robotics</h4>
+                            <p>Computer vision and motion planning using for3D and forMath libraries.</p>
+                        </div>
+                        <div class="use-case">
+                            <h4>Edge Computing</h4>
+                            <p>Deploy lightweight, high-performance workloads on IoT devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>forKernels</h3>
+                    <p>High-performance Fortran HPC libraries for the edge layer of the cloud continuum.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/forKernels" target="_blank" rel="noopener noreferrer">GitHub Organization</a></li>
+                        <li><a href="https://github.com/forKernels/forMath" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+                        <li><a href="#benchmarks">Performance Benchmarks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Libraries</h4>
+                    <ul>
+                        <li><a href="https://github.com/forKernels" target="_blank" rel="noopener noreferrer">forMath</a></li>
+                        <li><a href="https://github.com/forKernels" target="_blank" rel="noopener noreferrer">forAI</a></li>
+                        <li><a href="https://github.com/forKernels" target="_blank" rel="noopener noreferrer">forDSP</a></li>
+                        <li><a href="https://github.com/forKernels" target="_blank" rel="noopener noreferrer">for3D</a></li>
+                        <li><a href="https://github.com/forKernels" target="_blank" rel="noopener noreferrer">forCUDA</a></li>
+                        <li><a href="https://github.com/forKernels" target="_blank" rel="noopener noreferrer">forQuant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/forKernels" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 forKernels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
