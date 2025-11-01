@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="forKernels - High-performance Fortran libraries for HPC, AI, and signal processing on edge devices">
+    <title>forKernels – Fortran HPC for the Edge Layer of the Cloud Continuum</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            margin: 2rem 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            color: #555;
+        }
+
+        .modules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .module-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .module-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .module-card p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .performance {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .performance h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .performance-stat {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #764ba2;
+            margin: 1rem 0;
+        }
+
+        .features {
+            margin: 3rem 0;
+        }
+
+        .features h2 {
+            color: #333;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: #f8f9fa;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .use-cases {
+            margin: 3rem 0;
+        }
+
+        .use-cases h2 {
+            color: #333;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .use-case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .use-case {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 3px solid #667eea;
+        }
+
+        .use-case h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+
+            .main-content {
+                padding: 1.5rem;
+            }
+
+            .modules {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>forKernels</h1>
+            <p class="tagline">Fortran HPC for the Edge Layer of the Cloud Continuum</p>
+        </header>
+
+        <div class="main-content">
+            <div class="description">
+                <p><strong>forKernels</strong> is a suite of high-performance Fortran libraries optimized for modern HPC, AI, and signal-processing workloads. Each module — <strong>forMath</strong>, <strong>forCUDA</strong>, <strong>forDSP</strong>, <strong>for3D</strong> — delivers near-bare-metal speed through clean Python bindings, accelerating linear algebra, FFT, convolution, and optimization by up to 6× compared to NumPy on ARM and edge devices like Jetson Orin.</p>
+            </div>
+
+            <div class="performance">
+                <h2>Performance That Matters</h2>
+                <div class="performance-stat">6× Faster</div>
+                <p>Compared to NumPy on ARM and edge devices like Jetson Orin, forKernels delivers exceptional performance gains for compute-intensive workloads.</p>
+            </div>
+
+            <div class="modules">
+                <div class="module-card">
+                    <h3>forMath</h3>
+                    <p>High-performance linear algebra and optimization routines. Blazing-fast matrix operations, eigenvalue solvers, and numerical methods.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>forCUDA</h3>
+                    <p>GPU-accelerated computing kernels. Harness the power of CUDA through simple Fortran interfaces for maximum throughput.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>forDSP</h3>
+                    <p>Digital signal processing primitives. Ultra-fast FFT, convolution, filtering, and signal analysis optimized for real-time processing.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>for3D</h3>
+                    <p>3D computational geometry and graphics. Efficient spatial algorithms, mesh processing, and visualization kernels.</p>
+                </div>
+            </div>
+
+            <div class="features">
+                <h2>Key Features</h2>
+                <ul class="feature-list">
+                    <li>Near-bare-metal performance with Fortran optimization</li>
+                    <li>Clean Python bindings for easy integration</li>
+                    <li>Optimized for ARM and edge devices (Jetson Orin, Raspberry Pi)</li>
+                    <li>Production-ready for HPC, AI, and signal processing</li>
+                    <li>Minimal dependencies, maximum performance</li>
+                    <li>Modern Fortran standards with legacy-free codebase</li>
+                </ul>
+            </div>
+
+            <div class="use-cases">
+                <h2>Use Cases</h2>
+                <div class="use-case-grid">
+                    <div class="use-case">
+                        <h3>Edge AI</h3>
+                        <p>Deploy high-performance neural network inference on edge devices with minimal latency and power consumption.</p>
+                    </div>
+
+                    <div class="use-case">
+                        <h3>Real-Time Signal Processing</h3>
+                        <p>Process audio, video, and sensor data streams in real-time with optimized DSP algorithms.</p>
+                    </div>
+
+                    <div class="use-case">
+                        <h3>Scientific Computing</h3>
+                        <p>Accelerate numerical simulations, data analysis, and computational research on edge infrastructure.</p>
+                    </div>
+
+                    <div class="use-case">
+                        <h3>IoT Analytics</h3>
+                        <p>Perform complex analytics at the edge, reducing cloud bandwidth and improving response times.</p>
+                    </div>
+
+                    <div class="use-case">
+                        <h3>Computer Vision</h3>
+                        <p>Execute image processing and 3D reconstruction pipelines with hardware-optimized kernels.</p>
+                    </div>
+
+                    <div class="use-case">
+                        <h3>Robotics</h3>
+                        <p>Power autonomous systems with fast sensor fusion, path planning, and control algorithms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 forKernels | High-Performance Computing at the Edge</p>
+        </footer>
+    </div>
+</body>
+</html>
