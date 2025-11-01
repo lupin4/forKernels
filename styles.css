@@ -170,10 +170,26 @@ a:hover {
     color: var(--text-primary);
     font-weight: 500;
     transition: color var(--transition-fast);
+    position: relative;
 }
 
 .nav-menu li a:hover {
     color: var(--primary-color);
+}
+
+.nav-menu li a.active {
+    color: var(--primary-color);
+}
+
+.nav-menu li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
 }
 
 .nav-toggle {
@@ -191,6 +207,19 @@ a:hover {
     background-color: var(--text-primary);
     margin: 3px 0;
     transition: var(--transition-base);
+    display: block;
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* ===========================
