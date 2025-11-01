@@ -1,0 +1,19 @@
+# GitHub Pages Configuration
+title: forKernels
+description: High-performance Fortran HPC libraries for modern computing
+url: https://lupin4.github.io
+baseurl: /forKernels
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Exclude from processing
+exclude:
+  - README.md
+  - .gitignore
+  - .github/
+
+# Include these files
+include:
+  - _config.yml
