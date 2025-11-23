@@ -21,7 +21,17 @@ This repository contains the source code for the forKernels organization website
 | [for3D](for3D/) | 🚧 Beta | - | 3D graphics & transforms |
 | [forAI](forAI/) | 🚧 Beta | - | ML inference kernels |
 
+## Performance
 
+**Edge-optimized for:**
+- NVIDIA Jetson Orin Nano
+- Raspberry Pi 5
+- ARM64 cloud (AWS Graviton, GCP Tau T2A)
+
+**Real benchmarks:**
+- forBio: 956M cells/s (Smith-Waterman on Jetson)
+- forDSP: 464M samples/s (Convolution on Mac ARM)
+- forOpt: 799µs per step (Adam at 1M params, 1.4x faster than PyTorch)
 
 ## Structure
 
