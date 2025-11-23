@@ -8,13 +8,20 @@ forKernels is a suite of high-performance Fortran libraries optimized for modern
 
 This repository contains the source code for the forKernels organization website, built as a static site using HTML5, CSS3, and vanilla JavaScript.
 
-## Features
+## Available Modules
 
-- **Responsive Design**: Mobile-first approach with seamless adaptation to all screen sizes
-- **Performance Optimized**: Lightweight static site with no build dependencies
-- **SEO Friendly**: Comprehensive metadata for search engine optimization
-- **Accessible**: WCAG 2.1 compliant design patterns
-- **GitHub Pages Ready**: Deploy directly to GitHub Pages without build steps
+| Module | Status | PyPI | Description |
+|--------|--------|------|-------------|
+| [forOpt](forOpt/) | ✅ Production | `pip install foropt` | ML optimizers (1.4x faster than PyTorch) |
+| [forBio](forBio/) | ✅ Production | `pip install forbio` | Bioinformatics (surgical robotics ready) |
+| [forDSP](forDSP/) | ✅ Production | `pip install fordsp` | Audio processing (1.3ms latency) |
+| [forSig](forSig/) | ✅ Production | `pip install forsig` | Signal processing |
+| [forNav](forNav/) | 🚧 Beta | - | Navigation & pathfinding |
+| [forFin](forFin/) | 🚧 Beta | - | Financial computing |
+| [for3D](for3D/) | 🚧 Beta | - | 3D graphics & transforms |
+| [forAI](forAI/) | 🚧 Beta | - | ML inference kernels |
+
+
 
 ## Structure
 
